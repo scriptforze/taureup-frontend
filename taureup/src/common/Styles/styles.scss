@@ -15,14 +15,21 @@ body {
 }
 
 //var colors
-$primary_color: #0084f4;
-$primary_colorBackground: #6e01b6;
-$primary_colorLight: rgba(0, 94, 153, 0.3);
-// $accent_color:
-$textcolor_Dark: black;
+$primary_color: #04502f;
+$primary_colorDark: #012022;
+$primary_colorLight: #08843c;
+$accent_color: #b53036;
+$accent_colorDark: #b6060f;
+$accent_colorLight: #e8575d;
+$textcolor_Dark: #222121;
 $textcolor_Light: white;
 $textcolor_Gray: #96999b;
 $error_color: red;
 
 //components
 @import "../../Components/Topbar/topbar";
+@import "../../Components/Navbar/navbar";
+@import "../../Components/HeroScreen/heroscreen";
+
+//pages
+@import "../../Pages/mainscreen";

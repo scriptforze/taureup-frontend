@@ -1,0 +1,36 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 7rem;
+  &__items {
+    display: flex;
+    font-size: 22px;
+    list-style: none;
+    &--item {
+      margin-left: 41px;
+    }
+    a {
+      color: $textcolor_Dark;
+      text-decoration: none;
+    }
+  }
+  &__button {
+    align-items: center;
+    background-color: $accent_colorDark;
+    border: none;
+    border-radius: 50px;
+    color: $textcolor_Light;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    height: 4.3rem;
+    justify-content: center;
+    outline: none;
+    width: 22.5rem;
+    img {
+      margin-left: 20px;
+    }
+  }
+}

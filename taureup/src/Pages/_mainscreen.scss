@@ -1,0 +1,80 @@
+.main__intro {
+  height: 16.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 2.6rem;
+      margin-left: 1.6rem;
+      span {
+        color: $accent_colorDark;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.main__sectionOperate {
+  align-items: center;
+  background-image: url("../common/Resources/background_why.png");
+  display: flex;
+  height: 80rem;
+  justify-content: center;
+  &__text {
+    height: 73rem;
+    width: 44rem;
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 6.3rem;
+    }
+    p {
+      font-size: 2.2rem;
+    }
+  }
+  &__phone {
+    height: 73rem;
+    margin-left: 17.2rem;
+  }
+}
+
+.howwork {
+  border: 1px solid red;
+  // height: 80rem;
+  // height: fit-content;
+  // margin-bottom: 90px;
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 90px 0 90px 0;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 9rem;
+    &__content {
+      background: linear-gradient(to right, $textcolor_Light, $textcolor_Gray);
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px black;
+      width: 420px;
+      height: 290px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 26px;
+      }
+    }
+    &__content:hover {
+      border: 2px solid red;
+    }
+    &__icons {
+      height: 56px;
+    }
+  }
+}

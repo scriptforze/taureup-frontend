@@ -1,21 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import Select from '@mui/material/Select';
+// import MenuItem from '@mui/material/MenuItem';
+import global from '../../common/Resources/clarity_world-line.png'
+import mail from '../../common/Resources/codicon_mail.png'
 
 export default function Topbar(){
+    const [lenguaje, setLenguaje] = useState('');
+
+    const handleChange = (event) => {
+        setLenguaje(event.target.value);
+    };
 
     return (
         <div className='topbar'>
             <div className='topbar__languaje'>
-                <FontAwesomeIcon className='topbar__languaje--globe' icon={faGlobe}/>
-                <select name="" id="">
+                <img src={global} alt="icon_global" />
+                {/* <Select
+                    labelId="demo-simple-select-standard-label"
+                    id="demo-simple-select-standard"
+                    value={lenguaje}
+                    onChange={handleChange}
+                    label="Lenaguaje"
+                >
+                    <MenuItem value=''><em>Español</em></MenuItem>
+                    <MenuItem value={20}>Ingles</MenuItem>
+                </Select> */}
+                <select className='topbar__languaje--select' name="" id="">
                     <option value="esp">Español</option>
                     <option value="eng">Ingles</option>
                 </select>
             </div>
             <div className='topbar__mail'>
-                <FontAwesomeIcon icon={faEnvelope}/>
+                <img src={mail} alt="icon_mail" />
                 <p>soporte@teureup.com</p> |
                 <p>ventas@taureup.com</p>
             </div>
